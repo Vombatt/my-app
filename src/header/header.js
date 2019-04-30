@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./header.scss"
 
 export class Header extends Component {
   render() {
     return (
-      <div className="header">
-        <Link to="/">Стартовая страница</Link>
-        <Link to="/tictac">Крестики - нолики</Link>
-        <Link to="/tour">Тур героев</Link>
+      <div className="main-header">
+        <NavLink className="main-header-link" activeClassName="main-header-link-active" to="/" exact={true}>Стартовая страница</NavLink>
+        <NavLink className="main-header-link" activeClassName="main-header-link-active" to="/tictac">Крестики - нолики</NavLink>
+        <NavLink className="main-header-link" activeClassName="main-header-link-active" to="/tour">Тур героев</NavLink>
       </div>
     );
   }

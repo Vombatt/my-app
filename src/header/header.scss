@@ -1,0 +1,24 @@
+.main-header {
+    width: 100%;
+    height: 64px;
+    background-color: #1976d2;
+    display: flex;
+    align-items: stretch;
+
+    .main-header-link {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .main-header-link-active {
+        background-color: #84c1fd
+    }
+}
